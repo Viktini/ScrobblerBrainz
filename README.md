@@ -1,15 +1,18 @@
 # ScrobblerBrainz
-A MusicBee plug-in to scrobble tracks to ListenBrainz.
+A MusicBee plug-in to scrobble tracks to ListenBrainz. Forked to further support ListenBrainz features such as MBID submitting.
 
 # Restrictions
 1. Works better than the last.fm scrobbler, even tracks shorter than 30 s. are scrobbled.
-1. No MBIDs in the scrobble. MusicBee doesn't expose them in the API.
+1. ~~No MBIDs in the scrobble. MusicBee doesn't expose them in the API.~~ **MBIDs are submitted using TagLib#**
 1. No playcount sync.
-1. No "now listening".
-1. Or any other feature the last.fm scrobbler has.
+1. ~~No "now listening".~~ **This version submits "now listening", with MBIDs!**
+1. No liking of tracks.
+
+# Notes
+Not all MBID tags can be retrieved. TagLib# has updates to support multi-value tags easier on certain formats, but they haven't pushed out a new release yet. I'll see what I can do, but until then, AAC and ASF tags (iTunes and Windows Media, respectively) can only retrieve one artist MBID. This is fine, however, as ListenBrainz will complete the rest as long as the recording MBID is present.
 
 # Download
-https://github.com/karaluh/ScrobblerBrainz/releases/download/v1.1.0/mb_ScrobblerBrainz.dll
+https://github.com/Viktini/ScrobblerBrainz/releases/tag/v1.1.1-mbid_submit
 
 # Usage
 1. Get MusicBee https://getmusicbee.com/downloads/
