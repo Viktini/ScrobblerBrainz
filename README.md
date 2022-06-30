@@ -12,7 +12,7 @@ A MusicBee plug-in to scrobble tracks to ListenBrainz. Forked to further support
 Not all MBID tags can be retrieved. TagLib# has updates to support multi-value tags easier on certain formats, but they haven't pushed out a new release yet. I'll see what I can do, but until then, AAC and ASF tags (iTunes and Windows Media, respectively) can only retrieve one artist MBID. This is fine, however, as ListenBrainz will complete the rest as long as the recording MBID is present.
 
 # Download
-https://github.com/Viktini/ScrobblerBrainz/releases/tag/v1.1.1-mbid_submit
+https://github.com/Viktini/ScrobblerBrainz/releases/tag/v1.1.1-mbid_submit-2
 
 # Usage
 1. Get MusicBee https://getmusicbee.com/downloads/
