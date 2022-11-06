@@ -1,5 +1,7 @@
-# ScrobblerBrainz
+# ScrobblerBrainz (fork with MBID submission no longer maintained)
 A MusicBee plug-in to scrobble tracks to ListenBrainz. Forked to further support ListenBrainz features such as MBID submitting.
+
+Unmaintained right now as I have moved away from MusicBee and onto Quod Libet.
 
 # Restrictions
 1. Works better than the last.fm scrobbler, even tracks shorter than 30 s. are scrobbled.
